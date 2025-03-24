@@ -1,0 +1,180 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #4a90e2;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: #357ab7;
+}
+
+.download-btn {
+  background-color: #8e44ad;
+  margin-top: 20px;
+}
+
+.download-btn:hover {
+  background-color: #732d91;
+}
+
+.upload-btn {
+  background-color: #27ae60;
+}
+
+.upload-btn:hover {
+  background-color: #1f8532;
+}
+
+/* Upload section styling */
+.upload-section-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+.upload-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.upload-box {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+input[type="file"] {
+  display: block;
+  margin: 15px auto;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  transition: all 0.3s ease;
+}
+
+input[type="file"]:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+/* Preview Styles */
+.preview-image {
+  margin-top: 10px;
+  max-width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.file-preview, .preview-text {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.preview-text {
+  font-weight: bold;
+}
+
+/* Icons */
+.btn svg {
+  margin-right: 8px;
+  font-size: 1.4rem;
+}
+
+.upload-section h3 {
+  color: #4a90e2;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Download link styling */
+.download-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-link:hover {
+  background-color: #357ab7;
+}
+
+.download-link svg {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .upload-section-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .upload-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .upload-box {
+    width: 100%;
+    max-width: 400px;
+  }
+}
